@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{CFDD1ED5-BBE2-43E5-81FF-0857259F276B}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>FitSdkLibrary</RootNamespace>
+    <AssemblyName>FitSdkLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <IntermediateOutputPath>..\_IGNORED_\obj\$(Configuration)\</IntermediateOutputPath>
+    <WarningLevel>4</WarningLevel>
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <OutputPath>..\_IGNORED_\bin\$(Configuration)\</OutputPath>
+    <BaseIntermediateOutputPath>..\_IGNORED_\obj\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <BaseAddress>4194304</BaseAddress>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Crc.cs">
+      <Link>Crc.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Decode.cs">
+      <Link>Decode.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Defines.cs">
+      <Link>Defines.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Encode.cs">
+      <Link>Encode.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Field.cs">
+      <Link>Field.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\FieldComponent.cs">
+      <Link>FieldComponent.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\FieldDefinition.cs">
+      <Link>FieldDefinition.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\FitException.cs">
+      <Link>FitException.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Header.cs">
+      <Link>Header.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Mesg.cs">
+      <Link>Mesg.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\MesgBroadcaster.cs">
+      <Link>MesgBroadcaster.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\MesgDefinition.cs">
+      <Link>MesgDefinition.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile.cs">
+      <Link>Profile.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Mesgs\ActivityMesg.cs">
+      <Link>ActivityMesg.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Mesgs\BikeProfileMesg.cs">
+      <Link>BikeProfileMesg.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Mesgs\BloodPressureMesg.cs">
+      <Link>BloodPressureMesg.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Mesgs\CadenceZoneMesg.cs">
+      <Link>CadenceZoneMesg.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Mesgs\CapabilitiesMesg.cs">
+      <Link>CapabilitiesMesg.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Mesgs\CourseMesg.cs">
+      <Link>CourseMesg.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Mesgs\CoursePointMesg.cs">
+      <Link>CoursePointMesg.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Mesgs\DeviceInfoMesg.cs">
+      <Link>DeviceInfoMesg.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Mesgs\DeviceSettingsMesg.cs">
+      <Link>DeviceSettingsMesg.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Mesgs\EventMesg.cs">
+      <Link>EventMesg.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Mesgs\FieldCapabilitiesMesg.cs">
+      <Link>FieldCapabilitiesMesg.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Mesgs\FileCapabilitiesMesg.cs">
+      <Link>FileCapabilitiesMesg.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Mesgs\FileCreatorMesg.cs">
+      <Link>FileCreatorMesg.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Mesgs\FileIdMesg.cs">
+      <Link>FileIdMesg.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Mesgs\GoalMesg.cs">
+      <Link>GoalMesg.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Mesgs\HrmProfileMesg.cs">
+      <Link>HrmProfileMesg.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Mesgs\HrvMesg.cs">
+      <Link>HrvMesg.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Mesgs\HrZoneMesg.cs">
+      <Link>HrZoneMesg.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Mesgs\LapMesg.cs">
+      <Link>LapMesg.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Mesgs\LengthMesg.cs">
+      <Link>LengthMesg.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Mesgs\MemoGlobMesg.cs">
+      <Link>MemoGlobMesg.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Mesgs\MesgCapabilitiesMesg.cs">
+      <Link>MesgCapabilitiesMesg.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Mesgs\MetZoneMesg.cs">
+      <Link>MetZoneMesg.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Mesgs\MonitoringInfoMesg.cs">
+      <Link>MonitoringInfoMesg.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Mesgs\MonitoringMesg.cs">
+      <Link>MonitoringMesg.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Mesgs\PadMesg.cs">
+      <Link>PadMesg.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Mesgs\PowerZoneMesg.cs">
+      <Link>PowerZoneMesg.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Mesgs\RecordMesg.cs">
+      <Link>RecordMesg.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Mesgs\ScheduleMesg.cs">
+      <Link>ScheduleMesg.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Mesgs\SdmProfileMesg.cs">
+      <Link>SdmProfileMesg.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Mesgs\SessionMesg.cs">
+      <Link>SessionMesg.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Mesgs\SlaveDeviceMesg.cs">
+      <Link>SlaveDeviceMesg.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Mesgs\SoftwareMesg.cs">
+      <Link>SoftwareMesg.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Mesgs\SpeedZoneMesg.cs">
+      <Link>SpeedZoneMesg.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Mesgs\SportMesg.cs">
+      <Link>SportMesg.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Mesgs\TotalsMesg.cs">
+      <Link>TotalsMesg.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Mesgs\TrainingFileMesg.cs">
+      <Link>TrainingFileMesg.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Mesgs\UserProfileMesg.cs">
+      <Link>UserProfileMesg.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Mesgs\WeightScaleMesg.cs">
+      <Link>WeightScaleMesg.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Mesgs\WorkoutMesg.cs">
+      <Link>WorkoutMesg.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Mesgs\WorkoutStepMesg.cs">
+      <Link>WorkoutStepMesg.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Mesgs\ZonesTargetMesg.cs">
+      <Link>ZonesTargetMesg.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\Activity.cs">
+      <Link>Activity.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\ActivityClass.cs">
+      <Link>ActivityClass.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\ActivityLevel.cs">
+      <Link>ActivityLevel.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\ActivitySubtype.cs">
+      <Link>ActivitySubtype.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\ActivityType.cs">
+      <Link>ActivityType.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\AntNetwork.cs">
+      <Link>AntNetwork.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\AntplusDeviceType.cs">
+      <Link>AntplusDeviceType.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\AutolapTrigger.cs">
+      <Link>AutolapTrigger.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\BatteryStatus.cs">
+      <Link>BatteryStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\BodyLocation.cs">
+      <Link>BodyLocation.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\Bool.cs">
+      <Link>Bool.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\BpStatus.cs">
+      <Link>BpStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\Checksum.cs">
+      <Link>Checksum.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\ConnectivityCapabilities.cs">
+      <Link>ConnectivityCapabilities.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\CourseCapabilities.cs">
+      <Link>CourseCapabilities.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\CoursePoint.cs">
+      <Link>CoursePoint.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\DateTime.cs">
+      <Link>DateTime.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\DeviceIndex.cs">
+      <Link>DeviceIndex.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\DisplayHeart.cs">
+      <Link>DisplayHeart.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\DisplayMeasure.cs">
+      <Link>DisplayMeasure.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\DisplayPosition.cs">
+      <Link>DisplayPosition.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\DisplayPower.cs">
+      <Link>DisplayPower.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\Event.cs">
+      <Link>Event.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\EventType.cs">
+      <Link>EventType.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\File.cs">
+      <Link>File.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\FileFlags.cs">
+      <Link>FileFlags.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\FitnessEquipmentState.cs">
+      <Link>FitnessEquipmentState.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\GarminProduct.cs">
+      <Link>GarminProduct.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\Gender.cs">
+      <Link>Gender.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\Goal.cs">
+      <Link>Goal.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\GoalRecurrence.cs">
+      <Link>GoalRecurrence.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\HrType.cs">
+      <Link>HrType.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\HrZoneCalc.cs">
+      <Link>HrZoneCalc.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\Intensity.cs">
+      <Link>Intensity.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\Language.cs">
+      <Link>Language.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\LapTrigger.cs">
+      <Link>LapTrigger.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\LeftRightBalance.cs">
+      <Link>LeftRightBalance.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\LeftRightBalance100.cs">
+      <Link>LeftRightBalance100.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\LengthType.cs">
+      <Link>LengthType.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\LocalDateTime.cs">
+      <Link>LocalDateTime.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\Manufacturer.cs">
+      <Link>Manufacturer.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\MesgCount.cs">
+      <Link>MesgCount.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\MesgNum.cs">
+      <Link>MesgNum.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\MessageIndex.cs">
+      <Link>MessageIndex.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\PowerPhaseType.cs">
+      <Link>PowerPhaseType.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\PwrZoneCalc.cs">
+      <Link>PwrZoneCalc.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\RiderPositionType.cs">
+      <Link>RiderPositionType.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\Schedule.cs">
+      <Link>Schedule.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\SessionTrigger.cs">
+      <Link>SessionTrigger.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\SourceType.cs">
+      <Link>SourceType.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\Sport.cs">
+      <Link>Sport.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\SportBits0.cs">
+      <Link>SportBits0.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\SportBits1.cs">
+      <Link>SportBits1.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\SportBits2.cs">
+      <Link>SportBits2.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\StrokeType.cs">
+      <Link>StrokeType.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\SubSport.cs">
+      <Link>SubSport.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\SwimStroke.cs">
+      <Link>SwimStroke.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\TimerTrigger.cs">
+      <Link>TimerTrigger.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\TimeZone.cs">
+      <Link>TimeZone.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\UserLocalId.cs">
+      <Link>UserLocalId.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\Weight.cs">
+      <Link>Weight.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\WktStepDuration.cs">
+      <Link>WktStepDuration.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\WktStepTarget.cs">
+      <Link>WktStepTarget.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\WorkoutCapabilities.cs">
+      <Link>WorkoutCapabilities.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\WorkoutHr.cs">
+      <Link>WorkoutHr.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Profile\Types\WorkoutPower.cs">
+      <Link>WorkoutPower.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Fit\Subfield.cs">
+      <Link>Subfield.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Utility\EndianBinaryReader.cs">
+      <Link>EndianBinaryReader.cs</Link>
+    </Compile>
+    <Compile Include="..\FitSDKRelease_14.20\cs\Dynastream\Utility\EndianBinaryWriter.cs">
+      <Link>EndianBinaryWriter.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

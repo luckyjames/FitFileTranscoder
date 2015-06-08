@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 5.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitFileTranscoder", "FitFileTranscoder.csproj", "{283AAAB9-0B6E-415D-B296-307387B0317F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitSdkLibrary", "FitSdkLibrary\FitSdkLibrary.csproj", "{CFDD1ED5-BBE2-43E5-81FF-0857259F276B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{283AAAB9-0B6E-415D-B296-307387B0317F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{283AAAB9-0B6E-415D-B296-307387B0317F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{283AAAB9-0B6E-415D-B296-307387B0317F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{283AAAB9-0B6E-415D-B296-307387B0317F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFDD1ED5-BBE2-43E5-81FF-0857259F276B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFDD1ED5-BBE2-43E5-81FF-0857259F276B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFDD1ED5-BBE2-43E5-81FF-0857259F276B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFDD1ED5-BBE2-43E5-81FF-0857259F276B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
