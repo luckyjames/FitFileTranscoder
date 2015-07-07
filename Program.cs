@@ -49,6 +49,7 @@ namespace FitFileTranscoder
 				this.encoder.OnMesgDefinition(e.mesgDef);
 			}
 		}
+
 		public static void TranscodeFile(string filePath, string outputPath)
 		{
 			Console.WriteLine("Transcoding file {0} to {1}..", filePath, outputPath);
@@ -91,12 +92,19 @@ namespace FitFileTranscoder
 				{
 					var stopwatch = new System.Diagnostics.Stopwatch();
 					stopwatch.Start();
-					
-					TranscodeFile(args[0], args[0] + ".Transcoded.fit");
+
+					string inputFilePath = args[0];					
+					string transcodedFilePath = Path.ChangeExtension(args[0], ".Transcoded.fit");
+					TranscodeFile(inputFilePath, transcodedFilePath);
 
 					stopwatch.Stop();
 					Console.WriteLine("");
 					Console.WriteLine("Time elapsed: {0:0.#}s", stopwatch.Elapsed.TotalSeconds);
+
+					Console.WriteLine("Transcode successful. Moving files..");
+					File.Move(inputFilePath, Path.ChangeExtension(inputFilePath, ".Original.fit"));
+					File.Move(transcodedFilePath, inputFilePath);
+					Console.WriteLine("Done.");
 				}
 			}
 			catch (Exception caught)
