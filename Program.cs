@@ -101,9 +101,12 @@ namespace FitFileTranscoder
 					Console.WriteLine("");
 					Console.WriteLine("Time elapsed: {0:0.#}s", stopwatch.Elapsed.TotalSeconds);
 
+					string finalOriginalPath = Path.ChangeExtension(inputFilePath, ".Original.fit");
 					Console.WriteLine("Transcode successful. Moving files..");
-					File.Move(inputFilePath, Path.ChangeExtension(inputFilePath, ".Original.fit"));
+					File.Move(inputFilePath, finalOriginalPath);
+					Console.WriteLine("Movod original to {0}.", finalOriginalPath);
 					File.Move(transcodedFilePath, inputFilePath);
+					Console.WriteLine("Moved transcoded to {0}.", inputFilePath);
 					Console.WriteLine("Done.");
 				}
 			}
